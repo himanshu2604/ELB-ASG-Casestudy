@@ -27,9 +27,9 @@
 
 ## 🏗️ Architecture
 
-```
-c:\Users\Himanshu\Downloads\diagram-export-8-20-2025-12_30_53-PM.png
-```
+<img width="2667" height="942" alt="ELB-ASG-Architecture" src="https://github.com/user-attachments/assets/c9abbc20-8126-428d-8290-0534cca2eb04" />
+
+
 
 ## 🔧 Technologies & Services Used
 
