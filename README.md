@@ -50,6 +50,7 @@ aws-autoscaling-solution/
 ├── 📋 documentation/
 │   ├── AWS-Auto-Scaling-Solution.pdf      # Complete implementation guide
 │   ├── architecture-overview.md           # Architecture documentation
+│   ├── ELB-ASG-Architecture.png           # Architecture image
 │   └── cost-analysis.md                   # Financial impact analysis
 ├── 🔧 scripts/
 │   ├── user-data/                         # EC2 initialization scripts
