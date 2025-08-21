@@ -60,6 +60,7 @@ aws-autoscaling-solution/
 │   └── validation/                        # Testing and validation
 ├── ⚙️ configurations/
 │   ├── launch-template.json               # EC2 Launch Template
+│   ├── configuration.md                  # md for all files
 │   ├── autoscaling-group.json            # ASG configuration
 │   ├── load-balancer.json                # ALB configuration
 │   ├── security-groups.json              # Security configurations
