@@ -9,7 +9,8 @@
 ├── load-balancer.json
 ├── security-groups.json
 ├── route53-records.json
-└── cloudwatch-alarms.json
+├── cloudwatch-alarms.json
+└── configuration.md
 
 🔧 scripts/user-data/
 └── webserver-setup.sh

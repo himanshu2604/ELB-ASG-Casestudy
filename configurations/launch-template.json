@@ -1,0 +1,48 @@
+{
+  "LaunchTemplateName": "XYZ-Corp-WebServer-Template",
+  "LaunchTemplateData": {
+    "ImageId": "ami-0abcdef1234567890",
+    "InstanceType": "t3.medium",
+    "KeyName": "xyz-corp-keypair",
+    "SecurityGroupIds": [
+      "sg-webserver123456"
+    ],
+    "UserData": "IyEvYmluL2Jhc2gKd3VtIHVwZGF0ZSAteQp5dW0gaW5zdGFsbCAteSBodHRwZApzeXN0ZW1jdGwgc3RhcnQgaHR0cGQKc3lzdGVtY3RsIGVuYWJsZSBodHRwZApzZXRlbmZvcmNlIDAgMjkxCmVjaG8gIjxodG1sPjxib2R5PjxoMT5IZWxsbyBmcm9tIFhZWiBDb3JwIFNlcnZlciE8L2gxPjxwPlNlcnZlcjogJChob3N0bmFtZSk8L3A+PC9ib2R5PjwvaHRtbD4iID4gL3Zhci93d3cvaHRtbC9pbmRleC5odG1s",
+    "IamInstanceProfile": {
+      "Name": "XYZ-Corp-EC2-Profile"
+    },
+    "Monitoring": {
+      "Enabled": true
+    },
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/xvda",
+        "Ebs": {
+          "VolumeSize": 20,
+          "VolumeType": "gp3",
+          "DeleteOnTermination": true,
+          "Encrypted": true
+        }
+      }
+    ],
+    "TagSpecification": [
+      {
+        "ResourceType": "instance",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "XYZ-Corp-WebServer"
+          },
+          {
+            "Key": "Project",
+            "Value": "Auto-Scaling-Solution"
+          },
+          {
+            "Key": "Environment",
+            "Value": "Production"
+          }
+        ]
+      }
+    ]
+  }
+}

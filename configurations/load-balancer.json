@@ -1,0 +1,48 @@
+{
+  "Name": "XYZ-Corp-ALB",
+  "Scheme": "internet-facing",
+  "Type": "application",
+  "IpAddressType": "ipv4",
+  "Subnets": [
+    "subnet-public1a123456",
+    "subnet-public1b789012"
+  ],
+  "SecurityGroups": [
+    "sg-alb123456"
+  ],
+  "Tags": [
+    {
+      "Key": "Name",
+      "Value": "XYZ-Corp-ALB"
+    },
+    {
+      "Key": "Project",
+      "Value": "Auto-Scaling-Solution"
+    }
+  ],
+  "TargetGroup": {
+    "Name": "XYZ-Corp-TG",
+    "Protocol": "HTTP",
+    "Port": 80,
+    "VpcId": "vpc-12345678",
+    "HealthCheckProtocol": "HTTP",
+    "HealthCheckPath": "/",
+    "HealthCheckIntervalSeconds": 30,
+    "HealthCheckTimeoutSeconds": 5,
+    "HealthyThresholdCount": 2,
+    "UnhealthyThresholdCount": 3,
+    "Matcher": {
+      "HttpCode": "200"
+    }
+  },
+  "Listener": {
+    "Protocol": "HTTP",
+    "Port": 80,
+    "DefaultActions": [
+      {
+        "Type": "forward",
+        "TargetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/XYZ-Corp-TG/1234567890123456"
+      }
+    ]
+  }
+}

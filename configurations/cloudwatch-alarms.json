@@ -1,0 +1,48 @@
+{
+  "CloudWatchAlarms": [
+    {
+      "AlarmName": "XYZ-Corp-CPU-High",
+      "AlarmDescription": "Triggers when CPU utilization is above 80%",
+      "ActionsEnabled": true,
+      "AlarmActions": [
+        "arn:aws:autoscaling:us-east-1:123456789012:scalingPolicy:12345678-1234-1234-1234-123456789012:autoScalingGroupName/XYZ-Corp-ASG:policyName/XYZ-Corp-ScaleOut"
+      ],
+      "MetricName": "CPUUtilization",
+      "Namespace": "AWS/EC2",
+      "Statistic": "Average",
+      "Dimensions": [
+        {
+          "Name": "AutoScalingGroupName",
+          "Value": "XYZ-Corp-ASG"
+        }
+      ],
+      "Period": 300,
+      "EvaluationPeriods": 2,
+      "Threshold": 80,
+      "ComparisonOperator": "GreaterThanThreshold",
+      "TreatMissingData": "notBreaching"
+    },
+    {
+      "AlarmName": "XYZ-Corp-CPU-Low",
+      "AlarmDescription": "Triggers when CPU utilization is below 60%",
+      "ActionsEnabled": true,
+      "AlarmActions": [
+        "arn:aws:autoscaling:us-east-1:123456789012:scalingPolicy:87654321-4321-4321-4321-210987654321:autoScalingGroupName/XYZ-Corp-ASG:policyName/XYZ-Corp-ScaleIn"
+      ],
+      "MetricName": "CPUUtilization",
+      "Namespace": "AWS/EC2",
+      "Statistic": "Average",
+      "Dimensions": [
+        {
+          "Name": "AutoScalingGroupName",
+          "Value": "XYZ-Corp-ASG"
+        }
+      ],
+      "Period": 300,
+      "EvaluationPeriods": 2,
+      "Threshold": 60,
+      "ComparisonOperator": "LessThanThreshold",
+      "TreatMissingData": "notBreaching"
+    }
+  ]
+}
