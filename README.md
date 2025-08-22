@@ -47,7 +47,7 @@
 
 ```
 aws-autoscaling-solution/
-├── 📋 documentation/
+├── 📋 documentations/
 │   ├── AWS-Auto-Scaling-Solution.pdf      # Complete implementation guide
 │   ├── architecture-overview.md           # Architecture documentation
 │   ├── ELB-ASG-Architecture.png           # Architecture image
@@ -277,9 +277,9 @@ nslookup your-domain.com
 
 ## 📚 Documentation Links
 
-- **[Complete Implementation Guide](documentation/AWS-Auto-Scaling-Solution.pdf)** - Detailed step-by-step instructions
-- **[Architecture Deep Dive](documentation/architecture-overview.md)** - Technical architecture analysis
-- **[Cost Analysis Report](documentation/cost-analysis.md)** - Financial impact assessment
+- **[Complete Implementation Guide](documentations/AWS-Auto-Scaling-Solution.pdf)** - Detailed step-by-step instructions
+- **[Architecture Deep Dive](documentations/architecture-overview.md)** - Technical architecture analysis
+- **[Cost Analysis Report](documentations/cost-analysis.md)** - Financial impact assessment
 - **[Performance Benchmarks](testing/performance-benchmarks/)** - Load testing results
 - **[Best Practices Guide](troubleshooting/best-practices.md)** - Operational recommendations
 
