@@ -97,7 +97,7 @@ aws-autoscaling-solution/
 #### 1. **Infrastructure Setup**
 ```bash
 # Clone the repository
-git clone https://github.com/[your-username]/aws-autoscaling-solution.git
+git clone https://github.com/himanshu2604/ELB-ASG-Casestudy.git
 cd aws-autoscaling-solution
 
 # Create VPC and networking components
