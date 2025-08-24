@@ -309,7 +309,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Himanshu Nitin Nehete**  
 📧 Email: [himanshunehete2025@gmail.com](himanshunehete2025@gmail.com)  
-🔗 LinkedIn: [My LinkedIn Profile](https://www.linkedin.com/in/himanshu-nehete/)
+🔗 LinkedIn: [My LinkedIn Profile](https://www.linkedin.com/in/himanshu-nehete/) <br>
 🎓 Institution: iHub Divyasampark, IIT Roorkee  
 
 ---
