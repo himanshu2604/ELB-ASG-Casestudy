@@ -1,0 +1,33 @@
+{
+  "ScaleUpPolicy": {
+    "PolicyName": "XYZ-ScaleUp-Policy",
+    "PolicyType": "StepScaling",
+    "AdjustmentType": "ChangeInCapacity",
+    "StepAdjustments": [
+      {
+        "MetricIntervalLowerBound": 0,
+        "MetricIntervalUpperBound": 10,
+        "ScalingAdjustment": 1
+      },
+      {
+        "MetricIntervalLowerBound": 10,
+        "ScalingAdjustment": 2
+      }
+    ],
+    "MetricAggregationType": "Average",
+    "Cooldown": 300
+  },
+  "ScaleDownPolicy": {
+    "PolicyName": "XYZ-ScaleDown-Policy", 
+    "PolicyType": "StepScaling",
+    "AdjustmentType": "ChangeInCapacity",
+    "StepAdjustments": [
+      {
+        "MetricIntervalUpperBound": 0,
+        "ScalingAdjustment": -1
+      }
+    ],
+    "MetricAggregationType": "Average",
+    "Cooldown": 300
+  }
+}
