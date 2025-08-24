@@ -55,9 +55,18 @@ aws-autoscaling-solution/
 ├── 🔧 scripts/
 │   ├── user-data/                         # EC2 initialization scripts
 │   │   └── webserver-setup.sh
-│   ├── scaling-policies/                  # Auto Scaling configurations
-│   ├── cloudwatch-setup/                  # Monitoring setup scripts
-│   └── validation/                        # Testing and validation
+|   ├── scaling-policies/
+│   |    ├── create-scaling-policies.sh     # AWS CLI scaling policy setup
+│   |    ├── target-tracking-policy.json   # Target tracking configuration
+│   |    └── step-scaling-policy.json      # Step scaling for rapid changes
+|   ├── cloudwatch-setup/
+│   |    ├── setup-monitoring.sh           # CloudWatch dashboard creation
+│   |    ├── create-alarms.sh              # Automated alarm configuration
+│   |    └── custom-metrics.py             # Custom application metrics
+|   └── validation/
+|       ├── health-check-validator.sh     # ALB target health validation
+|       ├── scaling-test.py               # Automated scaling trigger
+|       └── dns-propagation-check.sh      # Route 53 validation
 ├── ⚙️ configurations/
 │   ├── launch-template.json               # EC2 Launch Template
 │   ├── configuration.md                  # md for all files
