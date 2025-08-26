@@ -1,0 +1,31 @@
+{
+  "testName": "Baseline Performance Test",
+  "testDate": "2023-10-27T10:00:00Z",
+  "configuration": {
+    "instances": 2,
+    "instanceType": "t2.micro",
+    "targetUrl": "http://your-alb-dns-name.elb.amazonaws.com/"
+  },
+  "loadParameters": {
+    "concurrentUsers": 100,
+    "testDurationMinutes": 10,
+    "rampUpSeconds": 30
+  },
+  "results": {
+    "summary": {
+      "totalRequests": 149850,
+      "failedRequests": 5,
+      "requestsPerSecond": 249.75
+    },
+    "responseTime_ms": {
+      "average": 85,
+      "min": 22,
+      "max": 450,
+      "p95": 195
+    },
+    "cpuUtilization": {
+      "average": "55.2%",
+      "peak": "78.9%"
+    }
+  }
+}

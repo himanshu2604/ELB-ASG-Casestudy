@@ -1,0 +1,31 @@
+{
+  "testName": "Peak Load Performance Test",
+  "testDate": "2023-10-27T11:30:00Z",
+  "configuration": {
+    "instances": 6,
+    "instanceType": "t2.micro",
+    "targetUrl": "http://your-alb-dns-name.elb.amazonaws.com/"
+  },
+  "loadParameters": {
+    "concurrentUsers": 500,
+    "testDurationMinutes": 15,
+    "rampUpSeconds": 60
+  },
+  "results": {
+    "summary": {
+      "totalRequests": 674100,
+      "failedRequests": 48,
+      "requestsPerSecond": 749.00
+    },
+    "responseTime_ms": {
+      "average": 98,
+      "min": 35,
+      "max": 620,
+      "p95": 240
+    },
+    "cpuUtilization": {
+      "average": "72.5%",
+      "peak": "84.1%"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "concurrentUsers": 50,
+    "averageResponseTime_ms": 75,
+    "requestsPerSecond": 120.5,
+    "errorRate_percent": 0.0
+  },
+  {
+    "concurrentUsers": 100,
+    "averageResponseTime_ms": 85,
+    "requestsPerSecond": 249.8,
+    "errorRate_percent": 0.01
+  },
+  {
+    "concurrentUsers": 250,
+    "averageResponseTime_ms": 92,
+    "requestsPerSecond": 480.2,
+    "errorRate_percent": 0.05
+  },
+  {
+    "concurrentUsers": 500,
+    "averageResponseTime_ms": 98,
+    "requestsPerSecond": 749.0,
+    "errorRate_percent": 0.11
+  },
+  {
+    "concurrentUsers": 1000,
+    "averageResponseTime_ms": 185,
+    "requestsPerSecond": 950.3,
+    "errorRate_percent": 0.8
+  },
+  {
+    "concurrentUsers": 1500,
+    "averageResponseTime_ms": 450,
+    "requestsPerSecond": 810.1,
+    "errorRate_percent": 4.5
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "eventId": "evt-scale-in-4d5e6f",
+  "timestamp": "2023-10-27T12:15:45Z",
+  "eventType": "ASG_SCALE_IN",
+  "status": "SUCCESSFUL",
+  "cause": {
+    "trigger": "CloudWatch Alarm: 'Low-CPU-Utilization'",
+    "metric": "CPUUtilization",
+    "threshold": "< 60% for 3 consecutive periods of 120 seconds",
+    "observedValue": "Average 45.8% over 6 minutes"
+  },
+  "action": {
+    "description": "Decreased capacity from 4 to 2 instances.",
+    "instanceIdsTerminated": [
+      "i-0123456789abcdef0"
+    ]
+  }
+}

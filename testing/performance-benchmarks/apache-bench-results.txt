@@ -1,0 +1,54 @@
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking your-alb-dns-name.elb.amazonaws.com (be sure to use the correct host name)...
+Completed 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
+
+
+Server Software:        Apache/2.4.52
+Server Hostname:        your-alb-dns-name.elb.amazonaws.com
+Server Port:            80
+
+Document Path:          /
+Document Length:        1234 bytes
+
+Concurrency Level:      200
+Time taken for tests:   13.456 seconds
+Complete requests:      10000
+Failed requests:        12
+   (Connect: 0, Receive: 0, Length: 12, Exceptions: 0)
+Total transferred:      14890000 bytes
+HTML transferred:       12340000 bytes
+Requests per second:    743.16 [#/sec] (mean)
+Time per request:       269.123 [ms] (mean)
+Time per request:       1.346 [ms] (mean, across all concurrent requests)
+Transfer rate:          1081.45 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:       10   35   15.2     33     110
+Processing:    45  229   60.1    220     590
+Waiting:       40  225   59.8    215     585
+Total:         55  264   65.3    255     695
+
+Percentage of the requests served within a certain time (ms)
+  50%    255
+  66%    280
+  75%    305
+  80%    320
+  90%    380
+  95%    430
+  98%    510
+  99%    560
+ 100%    695 (longest request)
