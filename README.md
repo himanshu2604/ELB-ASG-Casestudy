@@ -83,7 +83,7 @@ aws-autoscaling-solution/
 ├── 🧪 testing/
 |   ├── load-test-results/
 |   │   ├── baseline-performance.json     # 2-instance performance data
-|   │   ├── peak-load-results.json       # 6-instance scaling results
+|   │   ├── peak-load-results.json        # 6-instance scaling results
 |   │   └── stress-test-report.md         # Comprehensive test analysis
 |   ├── scaling-validation/
 |   │   ├── scale-out-validation.json     # Scaling trigger validation
