@@ -56,13 +56,13 @@ aws-autoscaling-solution/
 │   ├── user-data/                         # EC2 initialization scripts
 │   │   └── webserver-setup.sh
 |   ├── scaling-policies/
-│   |    ├── create-scaling-policies.sh     # AWS CLI scaling policy setup
-│   |    ├── target-tracking-policy.json   # Target tracking configuration
-│   |    └── step-scaling-policy.json      # Step scaling for rapid changes
+│   |   ├── create-scaling-policies.sh     # AWS CLI scaling policy setup
+│   |   ├── target-tracking-policy.json   # Target tracking configuration
+│   |   └── step-scaling-policy.json      # Step scaling for rapid changes
 |   ├── cloudwatch-setup/
-│   |    ├── setup-monitoring.sh           # CloudWatch dashboard creation
-│   |    ├── create-alarms.sh              # Automated alarm configuration
-│   |    └── custom-metrics.py             # Custom application metrics
+│   |   ├── setup-monitoring.sh           # CloudWatch dashboard creation
+│   |   ├── create-alarms.sh              # Automated alarm configuration
+│   |   └── custom-metrics.py             # Custom application metrics
 |   └── validation/
 |       ├── health-check-validator.sh     # ALB target health validation
 |       ├── scaling-test.py               # Automated scaling trigger
@@ -80,10 +80,19 @@ aws-autoscaling-solution/
 │   ├── load-balancer-health/
 │   ├── cloudwatch-metrics/
 │   └── route53-configuration/
-├── 🧪 testing/                           # Load testing & validation
-│   ├── load-test-results/
-│   ├── scaling-validation/
-│   └── performance-benchmarks/
+├── 🧪 testing/
+|   ├── load-test-results/
+|   │   ├── baseline-performance.json     # 2-instance performance data
+|   │   ├── peak-load-results.json        # 6-instance scaling results
+|   │   └── stress-test-report.md         # Comprehensive test analysis
+|   ├── scaling-validation/
+|   │   ├── scale-out-validation.json     # Scaling trigger validation
+|   │   ├── scale-in-validation.json      # Scale-down behavior
+|   │   └── response-time-analysis.md     # Performance consistency
+|   └── performance-benchmarks/
+|       ├── apache-bench-results.txt      # ab tool benchmark results
+|       ├── concurrent-user-tests.json    # Multi-user load testing
+|       └── throughput-analysis.md        # Requests per second analysis
 ├── 💰 cost-analysis/                     # Financial analysis
 │   ├── before-after-comparison.md
 │   ├── monthly-cost-breakdown.md
