@@ -98,9 +98,7 @@ aws-autoscaling-solution/
 │   ├── monthly-cost-breakdown.md
 │   └── roi-calculation.md
 └── 📚 troubleshooting/                   # Issue resolution
-    ├── common-issues.md
-    ├── debugging-guide.md
-    └── best-practices.md
+    └──troubleshooting-guide.md
 ```
 
 ## 🚀 Quick Start
